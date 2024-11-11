@@ -26,12 +26,13 @@
 }
 
 .header {
+  max-width: 1315px;
   height: 133px;
-  padding: 0 63.58px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   box-shadow: 0px 1px 0px 0px #00000029;
+  margin: 0 auto;
 }
 
 .header-logo {
@@ -99,12 +100,14 @@
 
 .hr-hr {
   border: 1px solid #000000;
-  width: 400px;
+  width: 100%;
   margin: 0 auto;
 }
 
 .content {
-  padding: 0 109px;
+  max-width: 636px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .all-articles {
@@ -118,18 +121,19 @@
 
 .articles {
   margin-top: 39px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  margin-left: auto;
+  margin-right: auto;
+  column-gap: 20px;
+  row-gap: 64px;
+  justify-items: center;
+  align-items: center;
 }
 
 .articleses {
-  margin-top: 64px;
-
-  width: 304px;
-  height: auto;
+  max-width: 304px;
+  height: 100%;
 }
 
 .img {
@@ -269,31 +273,32 @@
   }
   .articles {
     margin-top: 39px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-left: auto;
     margin-right: auto;
-    gap: 20px;
+    column-gap: 20px;
+    row-gap: 64px;
+    justify-items: center;
+    align-items: center;
   }
-  .one {
+  /* .one {
     display: none;
-  }
+  } */
 }
 
 @media screen and (max-width: 767.98px) {
   .articles {
     margin-top: 39px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
     display: grid;
     grid-template-columns: 1fr;
     margin-left: auto;
     margin-right: auto;
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
   }
+
   .menu {
     display: none;
   }
@@ -325,12 +330,8 @@
     width: 100%;
   }
 
-  .content {
-    padding: 0 20px;
-  }
-
   .articleses {
-    width: 100%;
+    max-width: 335px;
   }
 
   .all-articles {
@@ -346,9 +347,9 @@
     font-size: 22px;
   }
 
-  .one {
+  /* .one {
     display: none;
-  }
+  } */
 
   .footer {
     width: 100%;
