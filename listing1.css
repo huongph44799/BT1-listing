@@ -40,12 +40,20 @@
   font-weight: 400;
   font-style: normal;
   font-size: 26px;
+  margin-left: 63.58px;
+  margin-top: 52.54px;
+  margin-bottom: 40px;
 }
 
 .head {
   display: flex;
   list-style: none;
   gap: 36px;
+  font-size: 20px;
+  margin-left: 63.58px;
+  margin-top: 52.54px;
+  margin-bottom: 40px;
+  margin-right: 61px;
 }
 
 .head li {
