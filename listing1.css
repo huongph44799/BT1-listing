@@ -38,7 +38,7 @@
   font-family: "PT Serif", serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 37px;
+  font-size: 26px;
 }
 
 .head {
@@ -121,11 +121,13 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .articleses {
   margin-top: 64px;
-  margin-left: 24px;
+
   width: 304px;
   height: auto;
 }
@@ -157,6 +159,7 @@
   display: flex;
   justify-content: space-between;
   color: #ffffff;
+  gap: 18px;
 }
 
 .fone {
@@ -165,6 +168,7 @@
   font-weight: 800;
   line-height: 28px;
   text-align: left;
+  font-weight: bold !important;
 }
 
 .ftwo {
@@ -172,8 +176,9 @@
   font-size: 20px;
   font-weight: 400;
   line-height: 28px;
-  /* letter-spacing: 0.1em; */
+  font-weight: normal;
   text-align: left;
+  text-transform: uppercase;
 }
 
 .footeres {
@@ -217,7 +222,24 @@
   line-height: 27.2px;
   text-align: left;
 }
-
+.footers .fone {
+  font-weight: bold;
+}
+.footers {
+  gap: 18px;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+  white-space: nowrap;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin-left: -2px;
+  margin-right: -2px;
+  overflow: hidden;
+}
+.footers .ftwo {
+  font-weight: normal;
+}
 .text {
   margin: 64px auto;
   width: 178px;
@@ -245,13 +267,33 @@
   .container {
     padding: 76px 50px;
   }
-
+  .articles {
+    margin-top: 39px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 20px;
+  }
   .one {
     display: none;
   }
 }
 
 @media screen and (max-width: 767.98px) {
+  .articles {
+    margin-top: 39px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-left: auto;
+    margin-right: auto;
+  }
   .menu {
     display: none;
   }
@@ -325,10 +367,12 @@
 
   .fone {
     font-size: 16px;
+    font-weight: bold;
   }
 
   .ftwo {
     font-size: 16px;
+    font-weight: normal;
   }
 
   .contact ul li a {
